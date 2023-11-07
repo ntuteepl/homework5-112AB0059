@@ -1,0 +1,64 @@
+{
+  "tests": [
+    {
+      "name": "test.sh",
+      "setup": "",
+      "run": "sha256sum test.sh | awk '{print $1}'",
+      "input": "",
+      "output": "3800db321725dc208a100055757fafd630810b761b3e137d4eaa38dbe54c9e4c",
+      "comparison": "exact",
+      "timeout": 10,
+      "points": null
+    },
+    {
+      "name": "input_generator.sh",
+      "setup": "",
+      "run": "sha256sum input_generator.sh | awk '{print $1}'",
+      "input": "",
+      "output": "46276e1d9efe95e19b497e4b3c52ed11cf7b7028e09a7a3618b5ea01c9e4c1ef",
+      "comparison": "exact",
+      "timeout": 10,
+      "points": null
+    },
+    {
+      "name": "hw5-1",
+      "setup": "make hw5-1",
+      "run": "bash test.sh -p hw5-1 -n 5 -s b59468d3919c4f5c36b1de10494777b4fc8f6a5e1eb045bb3d24f44060bce669",
+      "input": "",
+      "output": "",
+      "comparison": "exact",
+      "timeout": 10,
+      "points": 1
+    },
+    {
+      "name": "hw5-2",
+      "setup": "make hw5-2",
+      "run": "bash test.sh -p hw5-2 -n 5 -s acc12f2f52000462291b8adef6c5629a5b147e90fb648fd7f6c46987c397c444",
+      "input": "",
+      "output": "",
+      "comparison": "exact",
+      "timeout": 10,
+      "points": 1
+    },
+    {
+      "name": "hw5-3",
+      "setup": "make hw5-3",
+      "run": "bash test.sh -p hw5-3 -n 5 -s 370b8a8514ce09171dc877b64b46fb3c6f1a30cf7b84ba2f256905a38a999616",
+      "input": "",
+      "output": "",
+      "comparison": "exact",
+      "timeout": 10,
+      "points": 1
+    },
+    {
+      "name": "hw5-4",
+      "setup": "make hw5-4",
+      "run": "bash test.sh -p hw5-4 -n 5 -s b83c7a2b077cc750da0cf129e00069eef4c6cb044f28d82cb3cf6367a9f7a905",
+      "input": "",
+      "output": "",
+      "comparison": "exact",
+      "timeout": 10,
+      "points": 1
+    }
+  ]
+}
